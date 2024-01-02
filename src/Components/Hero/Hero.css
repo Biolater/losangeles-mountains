@@ -1,0 +1,28 @@
+.hero-section{
+    height: 100vh;
+    width: 100% ;
+    background-image: url("../../assets/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.absolute{
+    height: calc(100vh - 64.75px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a{
+    position: relative;
+    height: 233.75px;
+    width: 594px;
+}
+
+.a img{
+    position: absolute;
+    left: -77px;
+    top: -22px;
+}
+
