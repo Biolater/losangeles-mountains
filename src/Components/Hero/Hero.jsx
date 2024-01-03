@@ -6,6 +6,9 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <Navbar />
+        <div className="hero-img">
+          <img src={heroTextImg} alt="" />
+        </div>
     </section>
   );
 };

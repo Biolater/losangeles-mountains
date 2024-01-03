@@ -1,3 +1,9 @@
+:root {
+    --initial-height: 540px;
+    --width-increase-factor: 1px;
+}
+  
+
 .hero-section{
     height: 100vh;
     width: 100% ;
@@ -5,24 +11,75 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: top center;
 }
 
-.absolute{
-    height: calc(100vh - 64.75px);
-    display:flex;
+.hero-section .wrapper{
+    height: calc(100vh - 64%);
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.a{
     position: relative;
-    height: 233.75px;
-    width: 594px;
 }
 
-.a img{
+.hero-img{
+    max-width: 200px;
+    width: 100%;
     position: absolute;
-    left: -77px;
-    top: -22px;
+    left: 44.4%;
+    top: 29%;
+    transform: translateX(-50%);
 }
+
+.hero-img img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+@media(min-width:518px){
+    .hero-img{
+        max-width: 250px;
+    }
+}
+
+
+@media(min-width:767px){
+    .hero-img{
+        max-width: 338px;
+    }
+
+}
+
+
+@media(min-width:992px){
+    .hero-img{
+        max-width: 391px;
+    }
+
+}
+
+
+
+@media(min-width:1200px){
+    .hero-img{
+        max-width: 480px;
+    }
+}
+
+@media(min-width:1300px){
+    .hero-img{
+        max-width: 580px;
+    }
+
+}
+
+
+@media(min-width:1480px){
+    .hero-img{
+        max-width: 600px;
+    }
+}
+
 

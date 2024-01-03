@@ -7,6 +7,9 @@ const Navbar = () => {
   const handleClick = () => {
     setIsActive(!isActive);
   }
+  const handlePrintButtonClick = () => {
+    alert(window.innerHeight)
+  }
   return (
     <header className="navbar-header">
       <nav className="navbar">

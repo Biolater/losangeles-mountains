@@ -16,3 +16,21 @@ body{
   margin: 0 auto;
   padding: 0px 20px;
 }
+
+@media(max-width:1140px){
+  .container{
+    max-width: 992px;
+  }
+}
+
+@media(max-width:992px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media(max-width:768px){
+  .container{
+    max-width: 592px;
+  }
+}
