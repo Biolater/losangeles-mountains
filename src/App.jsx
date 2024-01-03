@@ -1,9 +1,10 @@
 import "./App.css";
-import { Hero } from "./Components/ComponentsData"
+import { Hero, StickyNavbar } from "./Components/ComponentsData"
 function App() {
   return (
     <div>
       <Hero />
+      <StickyNavbar />
     </div>
   )
 }
