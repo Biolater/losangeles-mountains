@@ -9,7 +9,7 @@ const StickyNavbar = () => {
     setIsActive(!isActive);
   };
   return (
-    <header className="navbar-header">
+    <header className="navbar-header sticky-header">
       <nav className="navbar-sticky">
         <div className="container">
           <div className="navbar-logo" onClick={() => handleClick()}>
