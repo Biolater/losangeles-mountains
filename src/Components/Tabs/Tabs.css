@@ -1,0 +1,67 @@
+.tabs {
+    padding: 50px 0px;
+    height: 100vh;
+}
+
+.tab-bg {
+    background-color: #414f6b;
+}
+
+.tab-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-select .tab-button {
+    font-size: 20px;
+    background-color: #414f6b;
+    color: #dce2ea;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Oswald";
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tab-button span {
+    border-bottom: 1px solid #414f6b;
+}
+
+
+.tab-select .tab-button:hover span::after {
+    width: 100%;
+}
+
+.tab-button__active {
+    background-color: #dce2ea !important;
+    color: #414f6b !important;
+}
+
+.tab-content {
+    height: 100%;
+    position: relative;
+}
+
+.tab-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.tab-image.active {
+    opacity: 1;
+}
+
+
+@media(min-width:480px){
+    .tab-select{
+        justify-content: flex-start;
+    }
+}
