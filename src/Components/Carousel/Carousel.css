@@ -1,5 +1,5 @@
 .history {
-    height: 130vh;
+    height: 100vh;
     background-image: url("../../assets/peak.png");
     background-position: center;
     background-size: cover;
@@ -55,7 +55,6 @@
     background-color: #414f6b;
     opacity: .5;
     display: block;
-    margin-left: 6px;
 }
 
 .history__wrap h4 {
@@ -100,6 +99,7 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
+
 .item-list {
     display: flex;
     max-width: 910px;
@@ -122,22 +122,22 @@
     /* Firefox */
 }
 
-.indicators{
+.indicators {
     display: flex;
-    gap: 10px; 
+    gap: 10px;
     justify-content: center;
     margin-top: 20px;
 }
 
-.indicator{
+.indicator {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color:#ffffff4d;
+    background-color: #ffffff4d;
     cursor: pointer;
     transition: .3s;
 }
 
-.active{
-    background-color: #fff!important;
+.active {
+    background-color: #fff !important;
 }

@@ -1,0 +1,153 @@
+.climber{
+    padding:50px 0px ;
+}
+
+.climber .climb-text{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.climb-text h1{
+    font-family: "Oswald";
+    font-size: 100px;
+    color: #414f6b;
+    opacity: .5;
+}
+
+.climb__wrap h4 {
+    color: #414f6b;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Oswald";
+}
+
+
+.climb__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28.5px;
+}
+
+
+.climb__wrap .box {
+    width: 21px;
+    height: 21px;
+    background-color: #414f6b;
+    opacity: .5;
+    display: block;
+}
+
+
+
+.climber p{
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+@media(min-width:481px){
+    .climber{
+        padding: 20px 0px;
+    }
+    .climber .climb-text{
+        gap: 12px;
+    }
+
+    .climb-text h1{
+        font-size: 115px;
+    }
+    
+    .climb__wrap h4 {
+        font-size: 24px;
+    }
+     
+    .climb__wrap {
+        margin-bottom: 32.5px;
+    }
+}
+
+
+@media(min-width:768px){
+    .climb-text h1{
+        font-size: 125px;
+    }
+    
+    .climb__wrap h4 {
+        font-size: 25px;
+    }
+     
+    .climb__wrap {
+        margin-bottom: 35.5px;
+    }
+}
+
+
+@media(min-width:769px){
+    .climber-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+@media(min-width:992px){
+    .climber{
+        padding: 0px;
+    }
+    .climber p{
+        max-width: 601px;
+    }
+}
+
+@media(min-width:1023px){
+    .climb-text h1{
+        font-size: 140px;
+    }
+    
+    .climb__wrap h4 {
+        font-size: 28px;
+    }
+     
+    .climb__wrap {
+        margin-bottom: 39.5px;
+    }
+}
+
+
+
+@media(min-width:1120px){
+    .climber{
+        padding: 0px;
+    }
+
+    .climb-text h1{
+        font-size: 160px;
+    }
+    
+    .climb__wrap h4 {
+        font-size: 30px;
+    }
+     
+    .climb__wrap {
+        margin-bottom: 45.5px;
+    }
+}
+
+
+@media(min-width:1279px){
+    .climb-text h1{
+        font-size: 180px;
+    }
+    
+    .climb__wrap h4 {
+        font-size: 32px;
+    }
+     
+    .climb__wrap {
+        margin-bottom: 50.5px;
+    }
+}

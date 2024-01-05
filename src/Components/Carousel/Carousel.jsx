@@ -9,7 +9,7 @@ const Carousel = () => {
   const step = -920;
 
   const handleClick = (index) => {
-    setScrollPosition(index * step)
+    setScrollPosition(index * step);
     setActiveIndicatorIndex(index);
   };
 
@@ -43,20 +43,32 @@ const Carousel = () => {
               style={{ transform: `translateX(${scrollPosition}px)` }}
               className="item-list"
             >
-              {Array(12).fill(undefined).map((_, index) => (
-                <img
-                  key={index}
-                  className="item"
-                  src={index % 2 === 0 ? carouselImg1 : carouselImg2}
-                  alt={`carousel-img-${index}`}
-                />
-              ))}
+              {Array(12)
+                .fill(undefined)
+                .map((_, index) => (
+                  <img
+                    key={index}
+                    className="item"
+                    src={index % 2 === 0 ? carouselImg1 : carouselImg2}
+                    alt={`carousel-img-${index}`}
+                  />
+                ))}
             </div>
             <div className="indicators">
               {Array(3)
                 .fill(undefined)
                 .map((_, index) => {
-                  return <div onClick={() => {handleClick(index)}} className={`indicator ${activeIndicatorIndex === index ? "active" : ""} `} key={index}></div>;
+                  return (
+                    <div
+                      onClick={() => {
+                        handleClick(index);
+                      }}
+                      className={`indicator ${
+                        activeIndicatorIndex === index ? "active" : ""
+                      } `}
+                      key={index}
+                    ></div>
+                  );
                 })}
             </div>
           </div>
@@ -66,5 +78,5 @@ const Carousel = () => {
     </section>
   );
 };
-    
+
 export default Carousel;
