@@ -8,7 +8,52 @@ const Tabs = () => {
     { text: "MOUNTAIN 1", img: tabContentBg1 },
     { text: "MOUNTAIN 2", img: tabContentBg2 },
   ];
-
+  const scheduleData = [
+    {
+      content: (
+        <div className="schedule-dates">
+          <div className="date">
+            <span>25 Nov 2016</span>
+            <span>Vestibulum viverra</span>
+          </div>
+          <div className="date m-1">
+            <span>28 Nov 2016</span>
+            <span>Vestibulum viverra</span>
+          </div>
+          <div className="date m-2">
+            <span>18 Dec 2016</span>
+            <span>Vestibulum viverra</span>
+          </div>
+          <div className="date">
+            <span>7 Jan 2017</span>
+            <span>Vestibulum viverra</span>
+          </div>
+        </div>
+      ),
+    },
+    {
+      content: (
+        <div className="schedule-dates">
+          <div className="date m-3">
+            <span>17 Nov 2016</span>
+            <span>Vestibulum viverra</span>
+          </div>
+          <div className="date">
+            <span>13 Dec 2016</span>
+            <span>Vestibulum viverra</span>
+          </div>
+          <div className="date m-4">
+            <span>28 Dec 2016</span>
+            <span>Vestibulum viverra</span>
+          </div>
+          <div className="date">
+            <span>9 Feb 2017</span>
+            <span>Vestibulum viverra</span>
+          </div>
+        </div>
+      ),
+    },
+  ];
   const [activeTab, setActiveTab] = useState(0);
 
   const handleClick = (index) => {
@@ -42,7 +87,14 @@ const Tabs = () => {
             style={{ backgroundImage: `url(${item.img})` }}
           ></div>
         ))}
-        
+        <div className="container">
+          {TabButtonTexts.map((_, index) => (
+            <div className={`schedule ${index === activeTab ? "active" : ""}`}>
+              <h4>SCHEDULE</h4>
+              {scheduleData[index].content}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
