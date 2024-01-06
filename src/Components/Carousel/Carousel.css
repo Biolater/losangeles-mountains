@@ -31,23 +31,39 @@
     opacity: 0.1;
 }
 
-.history .history-header h1 {
-    font-family: "Oswald";
-    font-size: 180px;
-    color: #414f6b;
-    opacity: .5;
+.history{
+    padding:50px 0px ;
 }
 
-.history .history-text {
+.history .history-text{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.history-text h1{
+    font-family: "Oswald";
+    font-size: 100px;
+    color: #414f6b;
+    opacity: .5;
     display: flex;
     align-items: flex-end;
 }
 
+.history__wrap h4 {
+    color: #414f6b;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Oswald";
+}
+
+
 .history__wrap {
     display: flex;
     flex-direction: column;
-    margin-bottom: 51.5px;
+    margin-bottom: 28.5px;
 }
+
 
 .history__wrap .box {
     width: 21px;
@@ -57,21 +73,13 @@
     display: block;
 }
 
-.history__wrap h4 {
-    color: #414f6b;
-    font-size: 32px;
-    font-weight: bold;
-    font-family: "Oswald";
-}
 
-.history-header p {
+
+.history p{
     line-height: 24px;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    margin-top: -45px;
-    margin-left: 110px;
-    max-width: 814px;
 }
 
 .carousel-wrapper {
@@ -79,17 +87,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px 0px;
     background-color: #414f6b;
     opacity: .5;
     z-index: 5;
-    height: 194px;
+    height: 349px;
 }
 
 
 
 .history__carousel-container {
-    max-width: 880px;
+    max-width: 230px;
     width: 100%;
     opacity: 1;
     position: absolute;
@@ -102,7 +109,7 @@
 
 .item-list {
     display: flex;
-    max-width: 910px;
+    max-width: 230px;
     transition: all 0.5s;
     gap: 10px;
 }
@@ -138,6 +145,134 @@
     transition: .3s;
 }
 
+
+.imgs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .active {
     background-color: #fff !important;
+}
+
+
+@media(min-width:481px){
+    .history{
+        padding: 20px 0px;
+    }
+    .history .history-text{
+        gap: 12px;
+    }
+
+    .history-text h1{
+        font-size: 115px;
+    }
+    
+    .history__wrap h4 {
+        font-size: 24px;
+    }
+     
+    .history__wrap {
+        margin-bottom: 32.5px;
+    }
+}
+
+
+@media(min-width:768px){
+    .history-text h1{
+        font-size: 125px;
+    }
+    
+    .history__wrap h4 {
+        font-size: 25px;
+    }
+     
+    .history__wrap {
+        margin-bottom: 35.5px;
+    }
+
+    .history p{
+        margin-left: 65px;
+    }
+}
+
+
+@media(min-width:769px){
+    .history-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+@media(min-width:992px){
+    .history{
+        padding: 0px;
+    }
+    .history p{
+        max-width: 601px;
+    }
+}
+
+@media(min-width:1023px){
+    .history-text h1{
+        font-size: 140px;
+    }
+    
+    .history__wrap h4 {
+        font-size: 28px;
+    }
+     
+    .history__wrap {
+        margin-bottom: 39.5px;
+    }
+
+    .history p{
+        margin-left: 80px;
+    }
+}
+
+
+
+@media(min-width:1120px){
+    .history{
+        padding: 0px;
+    }
+
+    .history-text h1{
+        font-size: 160px;
+    }
+    
+    .history__wrap h4 {
+        font-size: 30px;
+    }
+     
+    .history__wrap {
+        margin-bottom: 45.5px;
+    }
+
+    .history p{
+        margin-left: 90px;
+    }
+}
+
+
+@media(min-width:1279px){
+    .history-text h1{
+        font-size: 180px;
+    }
+    
+    .history__wrap h4 {
+        font-size: 32px;
+    }
+     
+    .history__wrap {
+        margin-bottom: 50.5px;
+    }
+
+    .history p{
+        margin-left: 110px;
+    }
 }

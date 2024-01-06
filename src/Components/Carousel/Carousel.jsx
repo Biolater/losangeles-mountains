@@ -6,7 +6,7 @@ import carouselImg2 from "../../assets/carousel-2.png";
 const Carousel = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [activeIndicatorIndex, setActiveIndicatorIndex] = useState(0);
-  const step = -920;
+  const step = -230;
 
   const handleClick = (index) => {
     setScrollPosition(index * step);
@@ -43,37 +43,19 @@ const Carousel = () => {
               style={{ transform: `translateX(${scrollPosition}px)` }}
               className="item-list"
             >
-              {Array(12)
+              {Array(6)
                 .fill(undefined)
                 .map((_, index) => (
+                  // add a key prop here
                   <img
                     key={index}
-                    className="item"
                     src={index % 2 === 0 ? carouselImg1 : carouselImg2}
-                    alt={`carousel-img-${index}`}
+                    alt="carousel"
                   />
                 ))}
             </div>
-            <div className="indicators">
-              {Array(3)
-                .fill(undefined)
-                .map((_, index) => {
-                  return (
-                    <div
-                      onClick={() => {
-                        handleClick(index);
-                      }}
-                      className={`indicator ${
-                        activeIndicatorIndex === index ? "active" : ""
-                      } `}
-                      key={index}
-                    ></div>
-                  );
-                })}
-            </div>
           </div>
         </div>
-        <div className="carousel-wrapper"></div>
       </div>
     </section>
   );

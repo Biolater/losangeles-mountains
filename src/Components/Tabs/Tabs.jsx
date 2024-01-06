@@ -89,7 +89,7 @@ const Tabs = () => {
         ))}
         <div className="container">
           {TabButtonTexts.map((_, index) => (
-            <div className={`schedule ${index === activeTab ? "active" : ""}`}>
+            <div key={index} className={`schedule ${index === activeTab ? "active" : ""}`}>
               <h4>SCHEDULE</h4>
               {scheduleData[index].content}
             </div>
