@@ -30,6 +30,8 @@ footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 10px
 }
 
 footer .copyright {
@@ -41,4 +43,12 @@ footer .copyright {
     font-weight: 900;
     font-style: italic;
     font-family: "Lato";
+}
+
+
+@media(min-width:500px){
+    footer .container{
+        flex-direction: row;
+        gap: 0px;
+    }
 }

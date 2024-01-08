@@ -14,7 +14,7 @@
 }
 
 .tab-select .tab-button {
-    font-size: 20px;
+    font-size: 16px;
     background-color: #414f6b;
     color: #dce2ea;
     padding: 15px 20px;
@@ -129,6 +129,11 @@
     .schedule{
         width: 355px;
     }
+
+    .tab-select .tab-button{
+        font-size: 20px;
+    }
+
 }
 
 @media(min-width:630px){
