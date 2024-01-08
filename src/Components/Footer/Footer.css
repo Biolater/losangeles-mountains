@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.footer-logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo .losangeles {
+    max-width: 110px;
+}
+
+
+footer {
+    background-color: #414f6b;
+    padding: 10px 0px;
+}
+
+.footer-logo p {
+    font-size: 27px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #63769d;
+    font-family: "Bebas Neue";
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #63769d;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Lato";
+}

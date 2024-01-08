@@ -41,8 +41,7 @@
 }
 
 .tab-content {
-    height: 100%;
-    position: relative;
+    height: calc(100vh - 110px);    position: relative;
 }
 
 .tab-image {

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Hero, StickyNavbar, Carousel, Climb, Tabs,  } from "./Components/ComponentsData"
+import { Hero, StickyNavbar, Carousel, Climb, Tabs, Footer  } from "./Components/ComponentsData"
 function App() {
   return (
     <div>
@@ -8,6 +8,7 @@ function App() {
       <Carousel />
       <Climb />
       <Tabs />
+      <Footer />
     </div>
   )
 }
